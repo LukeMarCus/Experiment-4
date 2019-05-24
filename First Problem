@@ -1,0 +1,246 @@
+#include<iostream>
+#include<conio.h>
+#include<cmath>
+
+using namespace std;
+
+void add()
+{
+	int x;
+	int y;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "Insert two integral numbers." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "First number: "; 
+	cin >> x;
+
+	cout << "Second number: ";
+	cin >> y;
+
+	cout << endl << endl;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "The sum of" << x << " + " << y << " is " << x + y << "." <<  endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+}
+
+void ming()
+{
+	int x;
+	int y;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "Insert two integral numbers." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "First number: ";
+	cin >> x;
+
+	cout << "Second number: ";
+	cin >> y;
+
+	cout << endl << endl;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "The difference of" << x << " - " << y << " is " << x - y << "." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+}
+
+void times()
+{
+	int x;
+	int y;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "Insert two integral numbers." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "First number: ";
+	cin >> x;
+
+	cout << "Second number: ";
+	cin >> y;
+
+	cout << endl << endl;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "The product of" << x << " times " << y << " is " << x * y << "." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+}
+
+void divide()
+{
+	int x;
+	int y;
+	double q;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "Insert two integral numbers." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "First number: ";
+	cin >> x;
+
+	cout << "Second number: ";
+	cin >> y;
+
+	cout << endl << endl;
+
+	q = x / y;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "The quotient of " << x << " divided by " << y << " is " << q << "." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+}
+
+void factorial()
+{
+	int x;
+	int y;
+	int z = 1;
+	int w = 1;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "Insert two integral numbers." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "First number: ";
+	cin >> x;
+
+	cout << "Second number: ";
+	cin >> y;
+
+	cout << endl << endl;
+
+	for (int i = x; i > 0; i--)
+	{
+		z = z * i;
+	}
+
+	for (int i = y; i > 0; i--)
+	{
+		w = w * i;
+	}
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "The facorial of " << x << " is " << z << "." << endl;
+	cout << "The facorial of " << y << " is " << w << "." << endl;
+	cout << "----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+}
+
+int main()
+{
+	int a;
+	int b = 1;
+	while (b == 1)
+	{ 
+		cout << "----------------------------------------------------" << endl;
+		cout << "******************** Calculator ********************" << endl;
+		cout << "----------------------------------------------------" << endl;
+
+		cout << endl << endl;
+
+		cout << "Choose a program you want to run." << endl;
+	
+		cout << endl << endl;
+
+		cout << "1. Addition" << endl;
+		cout << "2. Subtraction" << endl;
+		cout << "3. Multiplication" << endl;
+		cout << "4. Division" << endl;
+		cout << "5. Factorial" << endl;
+
+		cout << endl << endl;
+
+		cin >> a;
+
+		cout << endl << endl;
+
+	
+		switch (a)
+		{
+			case 1:
+			{
+				add();
+				break;
+			}
+			case 2:
+			{
+				ming();
+				break;
+			}
+			case 3:
+			{
+				times();
+				break;
+			}
+			case 4:
+			{	
+				divide();
+				break;
+			}
+			case 5:
+			{
+				factorial();
+				break;
+			}
+			default:
+			{
+				cout << "Choose from 1 to 5 only.";
+				break;
+			}
+		}
+		cout << endl << endl;
+
+		cout << "----------------------------------------------------" << endl;
+		cout << "Do you want to run it again?" << endl;
+		cout << "----------------------------------------------------" << endl;
+
+		cout << endl << endl;
+
+		cout << "1. Yes" << endl;
+		cout << "2. No" << endl;
+
+		cout << endl << endl;
+
+		cin >> b;
+
+		cout << endl << endl;
+		cout << endl << endl;
+		cout << endl << endl;
+		cout << endl << endl;
+		cout << endl << endl;
+		cout << endl << endl;
+		cout << endl << endl;
+	}
+
+	cout << endl << endl;
+
+	cout << "----------------------------------------------------" << endl;
+	cout << "I love you 3000." << endl;
+	cout << "----------------------------------------------------" << endl;
+	_getch();
+	return 0;
+}
