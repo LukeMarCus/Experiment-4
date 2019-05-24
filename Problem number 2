@@ -1,0 +1,99 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	int n;
+	int number[50];
+	int index;
+	int m;
+	int o;
+
+
+
+
+	cout << "-----------------------------------------------------" << endl;
+	cout << "Insert the number of numerical values to be sorted: ";
+	cin >> n;
+	cout << "-----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	if (n < 0)
+	{
+		cout << "invalid Input. Try Again.";
+	}
+
+	else
+	{
+		for (index = 0; index < n; index++)
+		{
+			if (index == 0)
+			{
+				cout << "First number: ";
+				cin >> number[index];
+			}
+			else if (index == (n - 1))
+			{
+				cout << "Last  number: ";
+				cin >> number[index];
+			}
+			else
+			{
+				cout << "Next  number: ";
+				cin >> number[index];
+			}
+		}
+	}
+
+	cout << endl << endl;
+
+	cout << "-----------------------------------------------------" << endl;
+	cout << "The numbers to be sorted are: " << endl;
+	cout << "-----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	for (index = 0; index < n; index++)
+	{
+		if (index == (n - 1))
+			cout << number[index];
+		else 
+		cout << number[index] << ", ";
+
+		
+		
+	}
+
+	cout << endl << endl;
+
+	cout << "-----------------------------------------------------" << endl;
+	cout << "The numbers after sorting is: " << endl;
+	cout << "-----------------------------------------------------" << endl;
+
+	cout << endl << endl;
+
+	for (index = 0; index < n; index++)
+	{
+		for (int i = 0 + index ; i < n; i++)
+		{
+			if (number[index] > number[i])
+			{
+				m = number[index];
+				number[index] = number[i];
+				number[i] = m;
+			}
+		
+		}
+		if (index == (n - 1))
+			cout << number[index];
+		else
+			cout << number[index] << ", ";
+	}
+
+
+	_getch();
+	return 0;
+}
